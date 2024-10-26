@@ -1,0 +1,40 @@
+module FIFO_RD #(parameter FIFO_DEPTH = 8, parameter ADDR_WIDTH = 4)(
+    input wire [ADDR_WIDTH-1:0] wptr_gray,
+    input wire rclk, rrst_n, rinc,
+    output reg  [ADDR_WIDTH-2:0] raddr, 
+    output wire [ADDR_WIDTH-1:0] rptr_gray,
+    output wire empty
+);
+
+    reg  rinc_sync;
+    wire rinc_pulse;
+    reg [ADDR_WIDTH-1:0] rptr;
+
+    always @(posedge rclk or negedge rrst_n) 
+     begin
+        if (!rrst_n)
+            rinc_sync <= 0;
+        else 
+            rinc_sync <= rinc;
+     end 
+
+    assign rinc_pulse = !rinc_sync && rinc;
+    assign rptr_gray = rptr ^ (rptr >> 1);
+    assign empty = (rptr_gray == wptr_gray) ? 1 : 0;
+
+    always @(posedge rclk or negedge rrst_n)
+     begin
+        if (!rrst_n)
+         begin
+            raddr <= 0;
+            rptr <= 0;
+         end 
+        else if (rinc_pulse && !empty)
+         begin
+            raddr <= (raddr + 1) % FIFO_DEPTH;
+            rptr <= (rptr + 1) % 16;
+         end
+      end
+endmodule
+
+

@@ -1,0 +1,1607 @@
+Warning: Design 'SYS_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 21:40:28 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     27
+    Multiply driven inputs (LINT-6)                                10
+    Unconnected ports (LINT-28)                                    10
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      4
+
+Cells                                                              22
+    Cells do not drive (LINT-1)                                    16
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         4
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          4
+
+Tristate                                                           65
+    A tristate bus has a non tri-state driver (LINT-34)            65
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'RX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'TX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'UART_RX', input port 'CLK' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'RST' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'RX_IN' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'parity_enable' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'Prescale[5]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'Prescale[4]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'Prescale[3]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'Prescale[2]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'Prescale[1]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'UART_RX', input port 'Prescale[0]' drives wired logic; the port direction may have been specified incorrectly. (LINT-6)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', three-state bus 'U2_mux2X1/OUT' has non three-state driver 'CLK_DIV_RX_INST/C140/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'U2_mux2X1/OUT' has non three-state driver 'U2_mux2X1/C11/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'U3_mux2X1/OUT' has non three-state driver 'CLK_DIV_TX_INST/C140/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'U3_mux2X1/OUT' has non three-state driver 'U3_mux2X1/C11/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'U5_mux2X1/OUT' has non three-state driver 'RST_SYNC1_INST/FFs_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'U5_mux2X1/OUT' has non three-state driver 'U5_mux2X1/C11/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'U6_mux2X1/OUT' has non three-state driver 'RST_SYNC2_INST/FFs_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'U6_mux2X1/OUT' has non three-state driver 'U6_mux2X1/C11/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RD_D_VLD' has non three-state driver 'REG_FILE_INST/RdData_VLD_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[0]' has non three-state driver 'REG_FILE_INST/RdData_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[1]' has non three-state driver 'REG_FILE_INST/RdData_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[2]' has non three-state driver 'REG_FILE_INST/RdData_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[3]' has non three-state driver 'REG_FILE_INST/RdData_reg[3]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[4]' has non three-state driver 'REG_FILE_INST/RdData_reg[4]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[5]' has non three-state driver 'REG_FILE_INST/RdData_reg[5]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[6]' has non three-state driver 'REG_FILE_INST/RdData_reg[6]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'Rd_D[7]' has non three-state driver 'REG_FILE_INST/RdData_reg[7]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT_VLD' has non three-state driver 'ALU_INST/OUT_VALID_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[0]' has non three-state driver 'ALU_INST/ALU_OUT_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[1]' has non three-state driver 'ALU_INST/ALU_OUT_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[2]' has non three-state driver 'ALU_INST/ALU_OUT_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[3]' has non three-state driver 'ALU_INST/ALU_OUT_reg[3]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[4]' has non three-state driver 'ALU_INST/ALU_OUT_reg[4]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[5]' has non three-state driver 'ALU_INST/ALU_OUT_reg[5]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[6]' has non three-state driver 'ALU_INST/ALU_OUT_reg[6]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[7]' has non three-state driver 'ALU_INST/ALU_OUT_reg[7]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[8]' has non three-state driver 'ALU_INST/ALU_OUT_reg[8]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[9]' has non three-state driver 'ALU_INST/ALU_OUT_reg[9]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[10]' has non three-state driver 'ALU_INST/ALU_OUT_reg[10]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[11]' has non three-state driver 'ALU_INST/ALU_OUT_reg[11]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[12]' has non three-state driver 'ALU_INST/ALU_OUT_reg[12]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[13]' has non three-state driver 'ALU_INST/ALU_OUT_reg[13]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[14]' has non three-state driver 'ALU_INST/ALU_OUT_reg[14]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'ALU_OUT[15]' has non three-state driver 'ALU_INST/ALU_OUT_reg[15]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_CONFIG[0]' has non three-state driver 'REG_FILE_INST/regArr_reg[2][0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_CONFIG[2]' has non three-state driver 'REG_FILE_INST/regArr_reg[2][2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_CONFIG[3]' has non three-state driver 'REG_FILE_INST/regArr_reg[2][3]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_CONFIG[4]' has non three-state driver 'REG_FILE_INST/regArr_reg[2][4]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_CONFIG[5]' has non three-state driver 'REG_FILE_INST/regArr_reg[2][5]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_CONFIG[6]' has non three-state driver 'REG_FILE_INST/regArr_reg[2][6]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_CONFIG[7]' has non three-state driver 'REG_FILE_INST/regArr_reg[2][7]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RD_INC' has non three-state driver 'PLSE_GEN_INST/C18/Z'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_VLD_SYNC' has non three-state driver 'DATA_SYNC_INST/enable_pulse_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[0]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[1]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[2]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[3]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[3]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[4]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[4]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[5]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[5]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[6]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[6]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'RX_OUT_SYNC[7]' has non three-state driver 'DATA_SYNC_INST/sync_bus_reg[7]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'REF_SCAN_CLK' has non three-state driver 'U0_mux2X1/C11/Z_0'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'framing_error' has non three-state driver 'UART_INST/U0_UART_RX/U0_stp_chk/stp_err_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'parity_error' has non three-state driver 'UART_INST/U0_UART_RX/U0_par_chk/par_err_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/strt_glitch' has non three-state driver 'UART_INST/U0_UART_RX/U0_strt_chk/strt_glitch_reg/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/edge_count[0]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/edge_count_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/edge_count[1]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/edge_count_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/edge_count[2]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/edge_count_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/edge_count[3]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/edge_count_reg[3]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/edge_count[4]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/edge_count_reg[4]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/edge_count[5]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/edge_count_reg[5]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/bit_count[0]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/bit_count_reg[0]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/bit_count[1]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/bit_count_reg[1]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/bit_count[2]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/bit_count_reg[2]/Q'. (LINT-34)
+Warning: In design 'SYS_TOP', three-state bus 'UART_INST/U0_UART_RX/bit_count[3]' has non three-state driver 'UART_INST/U0_UART_RX/U0_edge_bit_counter/bit_count_reg[3]/Q'. (LINT-34)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U2_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U3_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 21:42:57 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     37
+    Unconnected ports (LINT-28)                                    19
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             2
+    Port direction conflicts with RTL (LINT-68)                     8
+
+Cells                                                              28
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         4
+
+Nets                                                                8
+    Undriven nets (LINT-3)                                          4
+    Net type is unknown (LINT-38)                                   4
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'RX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'TX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U2_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U3_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U2_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U3_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'ClkDiv', output port 'o_div_clk' is driven from the outside. (LINT-64)
+Warning: In design 'CLK_DIV_RX_INST', output port 'o_div_clk' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'CLK_DIV_TX_INST', output port 'o_div_clk' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U3_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U2_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 21:47:29 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     37
+    Unconnected ports (LINT-28)                                    19
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             2
+    Port direction conflicts with RTL (LINT-68)                     8
+
+Cells                                                              28
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         4
+
+Nets                                                                8
+    Undriven nets (LINT-3)                                          4
+    Net type is unknown (LINT-38)                                   4
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'RX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'TX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U2_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U3_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U2_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U3_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'ClkDiv', output port 'o_div_clk' is driven from the outside. (LINT-64)
+Warning: In design 'CLK_DIV_RX_INST', output port 'o_div_clk' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'CLK_DIV_TX_INST', output port 'o_div_clk' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U3_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U2_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 22:38:36 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     45
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             2
+    Port direction conflicts with RTL (LINT-68)                     8
+
+Cells                                                              28
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         4
+
+Nets                                                                8
+    Undriven nets (LINT-3)                                          4
+    Net type is unknown (LINT-38)                                   4
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'RX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'TX_CLK' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U2_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U3_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U2_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U3_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'ClkDiv', output port 'o_div_clk' is driven from the outside. (LINT-64)
+Warning: In design 'CLK_DIV_RX_INST', output port 'o_div_clk' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'CLK_DIV_TX_INST', output port 'o_div_clk' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U3_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U2_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 22:50:31 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 22:57:50 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 23:03:54 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 23:14:21 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 23:34:23 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 23:38:16 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Wed Oct 23 23:59:12 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 00:23:55 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 00:27:10 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP_dft', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP_dft', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP_dft', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP_dft', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP_dft', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP_dft', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP_dft', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 01:15:13 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     40
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+    Externally driven outputs (LINT-64)                             1
+    Port direction conflicts with RTL (LINT-68)                     4
+
+Cells                                                              26
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+    Cells have undriven hier pins (LINT-59)                         2
+
+Nets                                                                4
+    Undriven nets (LINT-3)                                          2
+    Net type is unknown (LINT-38)                                   2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP', net 'SYNC_RST1' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', net 'SYNC_RST2' has no drivers.  Logic 0 assumed. (LINT-3)
+Warning: In design 'SYS_TOP', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'SYS_TOP', net 'U5_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'SYS_TOP', net 'U6_mux2X1/OUT' has multiple drivers (unknown wired-logic type). (LINT-38)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U5_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'SYS_TOP', input pin 'IN_0' of hierarchical cell 'U6_mux2X1' has one or more internal loads, but is not connected to any nets. 'Logic 0' is assumed. (LINT-59)
+Warning: In design 'RST_SYNC', output port 'SYNC_RST' is driven from the outside. (LINT-64)
+Warning: In design 'RST_SYNC2_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'RST_SYNC1_INST', output port 'SYNC_RST' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U6_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+Warning: In design 'U5_mux2X1', output port 'OUT' is not being used in accordance with its stated direction. (LINT-68)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 01:28:26 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     35
+    Unconnected ports (LINT-28)                                    27
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+
+Cells                                                              24
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP_dft', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[9]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_CTRL', port 'ALU_OUT[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+1
+ 
+****************************************
+check_design summary:
+Version:     K-2015.06
+Date:        Thu Oct 24 02:37:59 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     27
+    Unconnected ports (LINT-28)                                    19
+    Shorted outputs (LINT-31)                                       3
+    Constant outputs (LINT-52)                                      5
+
+Cells                                                              24
+    Cells do not drive (LINT-1)                                    22
+    Connected to power or ground (LINT-32)                          2
+--------------------------------------------------------------------------------
+
+Warning: In design 'ClkDiv', cell 'C182' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C186' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C187' does not drive any nets. (LINT-1)
+Warning: In design 'ClkDiv', cell 'C190' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C342' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C343' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C344' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C345' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C370' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C372' does not drive any nets. (LINT-1)
+Warning: In design 'ALU_OPER_WIDTH8', cell 'C374' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C54' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_RD_FIFO_DEPTH8_ADDR_WIDTH4', cell 'C46' does not drive any nets. (LINT-1)
+Warning: In design 'Serializer_WIDTH8', cell 'C99' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'B_19' does not drive any nets. (LINT-1)
+Warning: In design 'uart_rx_fsm_DATA_WIDTH8', cell 'C283' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C101' does not drive any nets. (LINT-1)
+Warning: In design 'edge_bit_counter', cell 'C108' does not drive any nets. (LINT-1)
+Warning: In design 'data_sampling', cell 'C127' does not drive any nets. (LINT-1)
+Warning: In design 'deserializer_DATA_WIDTH8', cell 'B_0' does not drive any nets. (LINT-1)
+Warning: In design 'SYS_TOP_dft', port 'SE' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SI[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'SYS_TOP_dft', port 'SO[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_WR_FIFO_DEPTH8_ADDR_WIDTH4', port 'wdata[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_MEM_CNTRL_DATA_WIDTH8_FIFO_DEPTH8_ADDR_WIDTH4', port 'rclk' is not connected to any nets. (LINT-28)
+Warning: In design 'data_sampling', port 'Prescale[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[4]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[5]'. (LINT-31)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to output port 'OUT[6]'. (LINT-31)
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_0' is connected to logic 0. 
+Warning: In design 'UART_TX_DATA_WIDTH8', a pin on submodule 'U0_mux' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'IN_3' is connected to logic 1. 
+Warning: In design 'CLKDIV_MUX', output port 'OUT[7]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[5]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'CLKDIV_MUX', output port 'OUT[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'SYS_CTRL', output port 'clk_div_en' is connected directly to 'logic 1'. (LINT-52)
+1
